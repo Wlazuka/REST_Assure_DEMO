@@ -1,4 +1,4 @@
-package apiservice;
+package reqresApi.apiService;
 
 public class BaseEndpoint {
 }

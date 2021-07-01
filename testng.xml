@@ -4,8 +4,8 @@
   <test name="Rest API Demo Project">
 <!--    <parameter name="testDataFileName" value="settings.properties" />-->
     <classes>
-        <class name="dummyApi.MyFirstRestAssuredClass"/>
         <class name="dummyApi.GetUsersTest"/>
+        <class name="reqresApi.GetUsersTest"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

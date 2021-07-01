@@ -1,4 +1,4 @@
-package models;
+package dummyApi.models;
 
 import java.io.Serializable;
 import java.util.Objects;

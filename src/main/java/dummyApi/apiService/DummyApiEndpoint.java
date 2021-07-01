@@ -1,19 +1,19 @@
-package apiservice;
+package dummyApi.apiService;
 
-import models.*;
-import utils.PropertyManager;
+import dummyApi.models.*;
+import reqresApi.apiService.BaseEndpoint;
 
 import java.util.Collections;
 import java.util.List;
 
-public class DummyApiEndpoint extends BaseEndpoint{
+public class DummyApiEndpoint extends BaseEndpoint {
 
     private DummyApiEndpoint(){}
 
-    public static final String BASE_URL = PropertyManager.getProperty("baseURL");
-    String userEndpoint = "/user";
-    String postEndpoint = "/post";
-    String tagEndpoint = "/tag";
+    public static final String BASE_URL = "https://dummyapi.io/data/api";
+    public static final String userEndpoint = "/user";
+    public static final String postEndpoint = "/post";
+    public static final String tagEndpoint = "/tag";
 
     public static User getUserById(){
         return null;

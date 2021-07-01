@@ -1,13 +1,14 @@
-package models;
+package dummyApi.models;
 
 import java.io.Serializable;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import javax.annotation.processing.Generated;
 
 @Generated("jsonschema2pojo")
-public class User implements Serializable{
+public class User implements Serializable {
 
     @SerializedName("id")
     @Expose
@@ -205,17 +206,17 @@ public class User implements Serializable{
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.lastName == null)? 0 :this.lastName.hashCode()));
-        result = ((result* 31)+((this.firstName == null)? 0 :this.firstName.hashCode()));
-        result = ((result* 31)+((this.gender == null)? 0 :this.gender.hashCode()));
-        result = ((result* 31)+((this.phone == null)? 0 :this.phone.hashCode()));
-        result = ((result* 31)+((this.location == null)? 0 :this.location.hashCode()));
-        result = ((result* 31)+((this.dateOfBirth == null)? 0 :this.dateOfBirth.hashCode()));
-        result = ((result* 31)+((this.id == null)? 0 :this.id.hashCode()));
-        result = ((result* 31)+((this.title == null)? 0 :this.title.hashCode()));
-        result = ((result* 31)+((this.email == null)? 0 :this.email.hashCode()));
-        result = ((result* 31)+((this.picture == null)? 0 :this.picture.hashCode()));
-        result = ((result* 31)+((this.registerDate == null)? 0 :this.registerDate.hashCode()));
+        result = ((result * 31) + ((this.lastName == null) ? 0 : this.lastName.hashCode()));
+        result = ((result * 31) + ((this.firstName == null) ? 0 : this.firstName.hashCode()));
+        result = ((result * 31) + ((this.gender == null) ? 0 : this.gender.hashCode()));
+        result = ((result * 31) + ((this.phone == null) ? 0 : this.phone.hashCode()));
+        result = ((result * 31) + ((this.location == null) ? 0 : this.location.hashCode()));
+        result = ((result * 31) + ((this.dateOfBirth == null) ? 0 : this.dateOfBirth.hashCode()));
+        result = ((result * 31) + ((this.id == null) ? 0 : this.id.hashCode()));
+        result = ((result * 31) + ((this.title == null) ? 0 : this.title.hashCode()));
+        result = ((result * 31) + ((this.email == null) ? 0 : this.email.hashCode()));
+        result = ((result * 31) + ((this.picture == null) ? 0 : this.picture.hashCode()));
+        result = ((result * 31) + ((this.registerDate == null) ? 0 : this.registerDate.hashCode()));
         return result;
     }
 
@@ -228,7 +229,7 @@ public class User implements Serializable{
             return false;
         }
         User rhs = ((User) other);
-        return ((((((((((((this.lastName == rhs.lastName)||((this.lastName!= null)&&this.lastName.equals(rhs.lastName)))&&((this.firstName == rhs.firstName)||((this.firstName!= null)&&this.firstName.equals(rhs.firstName))))&&((this.gender == rhs.gender)||((this.gender!= null)&&this.gender.equals(rhs.gender))))&&((this.phone == rhs.phone)||((this.phone!= null)&&this.phone.equals(rhs.phone))))&&((this.location == rhs.location)||((this.location!= null)&&this.location.equals(rhs.location))))&&((this.dateOfBirth == rhs.dateOfBirth)||((this.dateOfBirth!= null)&&this.dateOfBirth.equals(rhs.dateOfBirth))))&&((this.id == rhs.id)||((this.id!= null)&&this.id.equals(rhs.id))))&&((this.title == rhs.title)||((this.title!= null)&&this.title.equals(rhs.title))))&&((this.email == rhs.email)||((this.email!= null)&&this.email.equals(rhs.email))))&&((this.picture == rhs.picture)||((this.picture!= null)&&this.picture.equals(rhs.picture))))&&((this.registerDate == rhs.registerDate)||((this.registerDate!= null)&&this.registerDate.equals(rhs.registerDate))));
+        return ((((((((((((this.lastName == rhs.lastName) || ((this.lastName != null) && this.lastName.equals(rhs.lastName))) && ((this.firstName == rhs.firstName) || ((this.firstName != null) && this.firstName.equals(rhs.firstName)))) && ((this.gender == rhs.gender) || ((this.gender != null) && this.gender.equals(rhs.gender)))) && ((this.phone == rhs.phone) || ((this.phone != null) && this.phone.equals(rhs.phone)))) && ((this.location == rhs.location) || ((this.location != null) && this.location.equals(rhs.location)))) && ((this.dateOfBirth == rhs.dateOfBirth) || ((this.dateOfBirth != null) && this.dateOfBirth.equals(rhs.dateOfBirth)))) && ((this.id == rhs.id) || ((this.id != null) && this.id.equals(rhs.id)))) && ((this.title == rhs.title) || ((this.title != null) && this.title.equals(rhs.title)))) && ((this.email == rhs.email) || ((this.email != null) && this.email.equals(rhs.email)))) && ((this.picture == rhs.picture) || ((this.picture != null) && this.picture.equals(rhs.picture)))) && ((this.registerDate == rhs.registerDate) || ((this.registerDate != null) && this.registerDate.equals(rhs.registerDate))));
     }
 
     @Override

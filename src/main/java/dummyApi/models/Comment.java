@@ -1,4 +1,4 @@
-package models;
+package dummyApi.models;
 
 public class Comment {
 }

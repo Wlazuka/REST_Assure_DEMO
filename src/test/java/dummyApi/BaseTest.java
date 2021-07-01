@@ -1,23 +1,22 @@
 package dummyApi;
 
-import apiservice.DummyApiEndpoint;
-import io.restassured.RestAssured;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import utils.PropertyManager;
+import dummyApi.apiService.DummyApiEndpoint;
 
 public class BaseTest {
 
-    protected static final String APP_ID = PropertyManager.getProperty("app-id");
-    protected String baseUrl = DummyApiEndpoint.BASE_URL;
+    protected static final String APP_ID = "app-id";
+    protected static final String ID_VALUE = "60ae340cd2a1b09642816222";
 
-    @BeforeClass
-    public void setup() {
-        RestAssured.baseURI = baseUrl;
-    }
+    protected static String baseURL = DummyApiEndpoint.BASE_URL;
+    protected static String usersURL = baseURL + DummyApiEndpoint.userEndpoint;
+    protected static String postURL = baseURL + DummyApiEndpoint.postEndpoint;
+    protected static String tagURL = baseURL + DummyApiEndpoint.tagEndpoint;
 
-
-    @AfterClass
-    public void cleanUp() {
-    }
+//    @BeforeClass
+//    public void setup() {
+//    }
+//
+//    @AfterClass
+//    public void cleanUp() {
+//    }
 }
