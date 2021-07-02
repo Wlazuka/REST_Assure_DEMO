@@ -4,14 +4,14 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class GetUsersTest {
+public class StatusLineTest {
 
     @Test
-    public static void GetUsers_Params() {
+    public static void StatusLine() {
         given()
-                .param("id", 1)
                 .get("/users")
                 .then()
-                .log().all();
+                .assertThat()
+                .statusLine("HTTP/1.1 200 OK");
     }
 }

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="REST_Assure_DEMO">
-  <test name="Rest API Demo Project">
-<!--    <parameter name="testDataFileName" value="settings.properties" />-->
+  <test name="ReqRes API TESTS">
     <classes>
-        <class name="dummyApi.GetUsersTest"/>
-        <class name="reqresApi.GetUsersTest"></class>
+        <class name="reqresApi.CodeStatusTest"/>
+        <class name="reqresApi.GetUsersTest"/>
+        <class name="reqresApi.HeadersTest"/>
+        <class name="reqresApi.StatusLineTest"/>
+        <class name="reqresApi.TimeTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

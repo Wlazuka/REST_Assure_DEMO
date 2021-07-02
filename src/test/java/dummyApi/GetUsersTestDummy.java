@@ -4,14 +4,14 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
 
-public class GetUsersTest extends BaseTest {
+public class GetUsersTestDummy extends DummyBaseTest {
 
     public static String getUsersSuccess() {
         return
                 given()
                         .header(APP_ID, ID_VALUE)
                         .when()
-                        .get(usersURL)
+                        .get("/user")
                         .then()
                         .log()
                         .body()
@@ -26,14 +26,15 @@ public class GetUsersTest extends BaseTest {
     public static void GETUsersStatus200() {
         given()
                 .header(APP_ID, ID_VALUE)
-                .get(usersURL)
+                .get("/user")
                 .then()
                 .statusCode(200);
     }
+
     @Test
     public static void GETUsersStatus403() {
         given()
-                .get(usersURL)
+                .get("/user")
                 .then()
                 .statusCode(403);
     }
